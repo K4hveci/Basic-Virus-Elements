@@ -2,9 +2,12 @@
  Basic virus elements to set virus execute at startup and moves virus to appdata directory
 
 # To make it executable use:
-```pyInstaller <file> --onefile```
+```pyInstaller <file> --onefile --add-data <random_file>```
 
-After that when you run the program, it will set itself as executable at startup and copys itself to appdata as ```fakeupgrade.exe```.
-You can change the virus part, for now it just writes "Hacked you" 100 times.
-You can use the presistence part for your other codes.
+
 I don't take any responsibility for the bad/harmful usage of the code.
+
+# Features
+Sets itself to start at startup.
+Copys itself to appdata directory.
+Added fake/decoy file (pdf) to open when you run the program.

